@@ -1,0 +1,11 @@
+@import './_vars.scss';
+@import './homepage/header';
+@import './homepage/hero';
+@import './common';
+@import './homepage/posts';
+@import './homepage/works';
+@import './homepage/footer';
+
+body {
+  font-family: Heebo, sansserif;
+}

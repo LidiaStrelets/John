@@ -1,0 +1,70 @@
+.works {
+  padding-top: 15px;
+  padding-bottom: 115px;
+}
+.works-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+  margin-top: 22px;
+}
+.work-content {
+  display: flex;
+
+  .picture-box {
+    width: 246px;
+    height: 180px;
+
+    margin-right: 18px;
+    // margin-top: 11px;
+
+    border: 1px solid black;
+  }
+}
+.work-title {
+  color: $page-title-color;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.47;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+.work-year {
+  display: inline-flex;
+  width: 62px;
+  height: 25px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 26px;
+
+  background-color: $year-bgc;
+  color: $white-color;
+  border-radius: 16px;
+  font-weight: 900;
+  font-size: 18px;
+  // line-height: 60px;
+}
+.work-theme {
+  display: inline-block;
+  color: $light-text-color;
+  font-size: 20px;
+  line-height: 1.45;
+
+  margin: 0;
+}
+.work-description {
+  width: 594px;
+  color: $page-title-color;
+  font-size: 16px;
+  line-height: 1.44;
+
+  margin-top: 17px;
+  margin-bottom: 0;
+}
+.work {
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 15px;
+  &:not(:last-child) {
+    margin-bottom: 33px;
+  }
+}

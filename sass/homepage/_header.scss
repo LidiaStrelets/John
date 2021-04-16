@@ -1,0 +1,28 @@
+.header-container {
+  max-width: $header-container-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+.site-nav__list {
+  list-style: none;
+  display: flex;
+  width: 236px;
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+.site-nav__item {
+  &:not(:last-child) {
+    margin-right: 33px;
+  }
+}
+.site-nav__link {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.45;
+}

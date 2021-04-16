@@ -1,0 +1,44 @@
+.hero-container {
+  padding-top: 127px;
+  padding-bottom: 71px;
+}
+.page-title {
+  margin-top: 18px;
+  margin-bottom: 0;
+
+  width: 506px;
+  color: $page-title-color;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 1.36;
+}
+.hero__description {
+  color: $page-title-color;
+  font-size: 16px;
+  line-height: 1.44;
+
+  margin-top: 40px;
+  margin-bottom: 0;
+  width: 497px;
+}
+.hero__btn {
+  margin-top: 38px;
+  padding: 17px 21px 17px 20px;
+  background-color: $hero-btn-color;
+  color: $white-color;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.45;
+  border-radius: 2px;
+  border: none;
+}
+.hero-box {
+  display: flex;
+  justify-content: space-between;
+  .picture-box {
+    width: 243px;
+    height: 243px;
+    border: 1px solid black;
+    border-radius: 50%;
+  }
+}
