@@ -20,6 +20,30 @@
   <body>
     <header>
       <div class="header-container">
+        <button
+          aria-label="Кнопка меню"
+          type="button"
+          class="menu-button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          data-menu="menu"
+        >
+          <svg
+            width="40"
+            height="40"
+            class="menu-button__icon"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="menu-button__icon-menu"
+              href="./images/sprite-min.svg#icon-menu"
+            ></use>
+            <use
+              class="menu-button__icon-close"
+              href="./images/sprite-min.svg#menu-close"
+            ></use>
+          </svg>
+        </button>
         <nav class="site-nav">
           <ul class="site-nav__list">
             <li class="site-nav__item">
@@ -76,8 +100,8 @@
                 <h3 class="post-title">
                   Creating pixel perfect icons in Figma
                 </h3>
-                <p class="post-date">12 Feb 2020</p>
-                <p class="post-theme">Figma, Icon Design</p>
+                <p class="post-date post-date--long">12 Feb 2020</p>
+                <p class="post-theme post-theme--long">Figma, Icon Design</p>
                 <p class="post-text">
                   Amet minim mollit non deserunt ullamco est sit aliqua dolor do
                   amet sint. Velit officia consequat duis enim velit mollit.
@@ -151,16 +175,52 @@
       <div class="container">
         <ul class="socmedia-list">
           <li class="socmedia-item">
-            <a href="" class="socmedia-link" aria-label="Facebook"></a>
+            <a href="" class="socmedia-link" aria-label="Facebook">
+              <svg
+                width="32"
+                height="32"
+                class="icon-socmedia"
+                aria-label="Facebook icon"
+              >
+                <use href="./images/sprite-min.svg#icon-fb"></use>
+              </svg>
+            </a>
           </li>
           <li class="socmedia-item">
-            <a href="" class="socmedia-link" aria-label="Instagram"></a>
+            <a href="" class="socmedia-link" aria-label="Instagram">
+              <svg
+                width="32"
+                height="32"
+                class="icon-socmedia"
+                aria-label="Instagram icon"
+              >
+                <use href="./images/sprite-min.svg#icon-insta"></use>
+              </svg>
+            </a>
           </li>
           <li class="socmedia-item">
-            <a href="" class="socmedia-link" aria-label="Twitter"></a>
+            <a href="" class="socmedia-link" aria-label="Twitter">
+              <svg
+                width="39"
+                height="32"
+                class="icon-socmedia"
+                aria-label="Twitter icon"
+              >
+                <use href="./images/sprite-min.svg#icon-Twitter"></use>
+              </svg>
+            </a>
           </li>
           <li class="socmedia-item">
-            <a href="" class="socmedia-link" aria-label="Linkedin"></a>
+            <a href="" class="socmedia-link" aria-label="Linkedin">
+              <svg
+                width="32"
+                height="32"
+                class="icon-socmedia"
+                aria-label="Linkedin icon"
+              >
+                <use href="./images/sprite-min.svg#icon-Linkedin"></use>
+              </svg>
+            </a>
           </li>
         </ul>
         <p class="copyright">
@@ -168,5 +228,7 @@
         </p>
       </div>
     </footer>
+
+    <script src="./js/menu.js" type="module"></script>
   </body>
 </html>

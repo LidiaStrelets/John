@@ -1,44 +1,96 @@
 .hero-container {
-  padding-top: 127px;
-  padding-bottom: 71px;
+  @media screen and(max-width: $to-desctop-container-width) {
+    // max-width: $mobile-container-width;
+    padding-top: 33px;
+    padding-bottom: 58px;
+
+    text-align: center;
+  }
+  @media screen and(min-width: $container-width) {
+    padding-top: 127px;
+    padding-bottom: 71px;
+  }
 }
 .page-title {
-  margin-top: 18px;
   margin-bottom: 0;
-
-  width: 506px;
-  color: $page-title-color;
   font-weight: 700;
-  font-size: 44px;
-  line-height: 1.36;
+
+  @media screen and(max-width: $to-desctop-container-width) {
+    margin-top: 40px;
+
+    font-size: 32px;
+    line-height: 1.25;
+
+    max-width: 312px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and(min-width: $container-width) {
+    margin-top: 18px;
+
+    max-width: 506px;
+
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 .hero__description {
-  color: $page-title-color;
-  font-size: 16px;
-  line-height: 1.44;
-
-  margin-top: 40px;
   margin-bottom: 0;
-  width: 497px;
+  font-size: 16px;
+
+  @media screen and(max-width: $to-desctop-container-width) {
+    margin-top: 21px;
+    line-height: 1.47;
+    max-width: 328px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and(min-width: $container-width) {
+    line-height: 1.44;
+
+    margin-top: 40px;
+
+    width: 497px;
+  }
 }
 .hero__btn {
-  margin-top: 38px;
-  padding: 17px 21px 17px 20px;
-  background-color: $hero-btn-color;
+  border-radius: 2px;
+  border: none;
+  background-color: $accented-color;
   color: $white-color;
+  padding: 17px 21px 17px 20px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.45;
-  border-radius: 2px;
-  border: none;
+
+  @media screen and(max-width: $to-desctop-container-width) {
+    margin-top: 27px;
+  }
+  @media screen and(min-width: $container-width) {
+    margin-top: 38px;
+  }
 }
 .hero-box {
   display: flex;
-  justify-content: space-between;
+  @media screen and(max-width: $to-desctop-container-width) {
+    flex-direction: column-reverse;
+  }
+  @media screen and(min-width: $container-width) {
+    justify-content: space-between;
+  }
+
   .picture-box {
-    width: 243px;
-    height: 243px;
     border: 1px solid black;
     border-radius: 50%;
+    @media screen and(max-width: $to-desctop-container-width) {
+      width: 174px;
+      height: 174px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @media screen and(min-width: $container-width) {
+      width: 243px;
+      height: 243px;
+    }
   }
 }

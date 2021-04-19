@@ -1,60 +1,119 @@
 .recent {
   background-color: $section-bgc;
-  padding-bottom: 32px;
 
-  .text-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  @media screen and(max-width: $to-desctop-container-width) {
+    padding-bottom: 38px;
+  }
+  @media screen and(min-width: $container-width) {
+    padding-bottom: 32px;
+
+    .text-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 }
 
 .recent-link {
-  color: $link-color;
-  text-decoration: none;
-  font-size: 16px;
-  line-height: 1.44;
+  @media screen and(max-width: $to-desctop-container-width) {
+    display: none;
+  }
+  @media screen and(min-width: $container-width) {
+    color: $link-color;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.44;
+  }
 }
 .posts-list {
   padding: 0;
   margin: 0;
   list-style: none;
-
-  display: flex;
-  justify-content: space-between;
+  @media screen and(min-width: $container-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .post {
-  width: 418px;
-  padding: 24px 22px 35px;
-  background: #fff;
+  background: $white-color;
+  box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+  border-radius: 4px;
+
+  @media screen and(max-width: $to-desctop-container-width) {
+    max-width: 339px;
+    padding: 12px 20px 20px 20px;
+    &:not(:last-child) {
+      margin-bottom: 17px;
+    }
+  }
+  @media screen and(min-width: $container-width) {
+    width: 418px;
+    padding: 24px 22px 35px;
+  }
 }
 .post-title {
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.46;
-
   margin-top: 0;
-  margin-bottom: 17px;
+
+  @media screen and(max-width: $to-desctop-container-width) {
+    font-size: 22px;
+    line-height: 1.36;
+    margin-bottom: 12px;
+  }
+  @media screen and(min-width: $container-width) {
+    font-size: 26px;
+    line-height: 1.46;
+
+    margin-bottom: 17px;
+  }
 }
 .post-date,
 .post-theme {
   display: inline-block;
-  font-size: 18px;
   line-height: 1.44;
-  color: $page-title-color;
   margin: 0;
+
+  @media screen and(max-width: $to-desctop-container-width) {
+    font-size: 16px;
+  }
+  @media screen and(min-width: $container-width) {
+    font-size: 18px;
+  }
 }
 .post-date {
-  padding-right: 23px;
   border-right: 1px solid $black-color;
+
+  @media screen and(max-width: $to-desctop-container-width) {
+    padding-right: 19px;
+  }
+  @media screen and(min-width: $container-width) {
+    padding-right: 23px;
+  }
 }
 .post-theme {
-  padding-left: 23px;
+  @media screen and(max-width: $to-desctop-container-width) {
+    padding-left: 15px;
+  }
+  @media screen and(min-width: $container-width) {
+    padding-left: 20px;
+  }
 }
 .post-text {
-  margin-top: 11px;
   margin-bottom: 0;
   font-size: 16px;
   line-height: 1.44;
-  color: $page-title-color;
+
+  @media screen and(max-width: $to-desctop-container-width) {
+    margin-top: 19px;
+  }
+  @media screen and(min-width: $container-width) {
+    margin-top: 11px;
+  }
+}
+.post-date--long {
+  padding-right: 5px;
+}
+.post-theme--long {
+  padding-left: 1px;
 }

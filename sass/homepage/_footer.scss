@@ -17,12 +17,23 @@
 .socmedia-item {
   width: 30px;
   height: 30px;
-  outline: 1px solid black;
 }
 .copyright {
-  color: $page-title-color;
   font-size: 14px;
   line-height: 1.5;
   text-align: center;
   margin: 0;
+}
+.icon-socmedia {
+  fill: $page-title-color;
+  transition: fill 250ms ease;
+}
+.socmedia-link {
+  display: inline-block;
+  &:hover,
+  &:focus {
+    .icon-socmedia {
+      fill: $accented-color;
+    }
+  }
 }

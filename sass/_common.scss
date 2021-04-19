@@ -1,12 +1,32 @@
 .container {
-  width: $container-width;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 18px;
+  padding-right: 18px;
+  @media screen and(max-width: $mobile-container-width) {
+    max-width: $mobile-container-width;
+    // margin-left: auto;
+    // margin-right: auto;
+  }
+  @media screen and(min-width: $from-mobile-container-width) and(max-width: $to-desctop-container-width) {
+    width: $mobile-container-width;
+  }
+  @media screen and(min-width: $container-width) {
+    width: $container-width;
+  }
 }
 .section-title {
   color: $page-title-color;
   font-weight: 400;
-  font-size: 22px;
-  line-height: 2.73;
-  margin: 0;
+
+  @media screen and(max-width: $to-desctop-container-width) {
+    font-size: 18px;
+    line-height: 3.33;
+    text-align: center;
+  }
+  @media screen and(min-width: $container-width) {
+    font-size: 22px;
+    line-height: 2.73;
+    margin: 0;
+  }
 }
